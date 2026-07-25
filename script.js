@@ -124,3 +124,20 @@ setInterval(() => {
     }, 2500);
 
 }, 9000);
+startBtn.onclick = () => {
+
+    document.querySelector("h1").style.display = "none";
+
+    startBtn.style.display = "none";
+
+    letterBox.classList.remove("hidden");
+
+    document.querySelectorAll(".walking-cat").forEach(cat => {
+        cat.style.display = "none";
+    });
+
+    music.play();
+
+    type();
+
+};
